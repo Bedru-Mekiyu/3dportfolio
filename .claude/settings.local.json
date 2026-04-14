@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run:*)",
+      "Bash(curl -s http://localhost:5173)",
+      "Bash(]\" \"C:/Users/AFRO-EAGLE/bedru-3D-portfolio/src/sections/Hero.jsx\" | grep -v \"react\\\\|@gsap\\\\|@bedru\\\\|useGSAP\\\\|gsap\\\\|useRef\\\\|import\\\\|from\\\\|const\\\\|return\\\\|className\\\\|id\\\\|href\\\\|alt\\\\|src\\\\|aria\\\\|type\\\\|target\\\\|rel\\\\|download\\\\|style\\\\|background\\\\|animationDelay\\\\|key\\\\|fill\\\\|stroke\\\\|viewBox\\\\|strokeWidth\\\\|line\" | head -10)",
+      "Bash(grep -P \"['`]\" \"C:/Users/AFRO-EAGLE/bedru-3D-portfolio/src/sections/Hero.jsx\" | grep -v \"react\\\\|@gsap\\\\|@bedru\\\\|useGSAP\\\\|gsap\\\\|useRef\\\\|import\\\\|from\\\\|const\\\\|return\\\\|className\\\\|id\\\\|href\\\\|alt\\\\|src\\\\|aria\\\\|type\\\\|target\\\\|rel\\\\|download\\\\|style\\\\|background\\\\|animationDelay\\\\|key\\\\|fill\\\\|stroke\\\\|viewBox\\\\|strokeWidth\\\\|line\" | head -10)"
+    ]
+  }
+}
