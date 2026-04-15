@@ -76,24 +76,27 @@ const showcaseProjects = [
   {
     layout: "featured",
     index: "01",
-    category: "Product · Mobile",
-    title: "Ryde",
-    headline: "Ride-hailing with zero friction from request to pickup.",
+    category: "Web · Full Stack",
+    title: "The Rental App",
+    headline:
+      "A full-stack platform for listing, browsing, and booking rental items or properties.",
     context:
-      "Dense logistics behind the scenes, but the rider only feels clarity: status, ETA, and trust at a glance.",
+      "Users can register, browse available listings, and make reservations while owners manage their rental offerings in one place.",
     outcome:
-      "Shipped as a native-feeling Expo app with Tailwind-driven UI consistency across flows.",
-    stack: ["React Native", "Expo", "Tailwind CSS"],
+      "Built to demonstrate user authentication, CRUD operations, and the business logic needed to power a booking system end to end.",
+    stack: ["Authentication", "CRUD Operations", "Booking Logic"],
+    visualVariant: "rentalPortal",
     imgPath: "/images/project1.png",
-    alt: "Ryde ride-hailing app interface",
+    alt: "Rental Management System login screen mockup",
     href: "#contact",
   },
   {
     layout: "compact",
     index: "02",
     category: "Web · Operations",
-    title: "Library OS",
-    headline: "Circulation and inventory in one calm dashboard.",
+    title: "CivicVoice App",
+    headline:
+      "A civic engagement platform for reporting public issues and tracking response with transparency.",
     context:
       "Libraries juggle vendors, patrons, and stock—tool sprawl was slowing every decision.",
     outcome:
@@ -119,6 +122,34 @@ const showcaseProjects = [
     href: "#contact",
   },
 ];
+
+const portfolioShowcaseProjects = showcaseProjects.map((project, index) => {
+  if (index === 0) {
+    return {
+      ...project,
+      category: "Web · Full Stack",
+    };
+  }
+
+  if (index === 1) {
+    return {
+      ...project,
+      category: "Web · Civic Tech",
+      title: "CivicVoice App",
+      headline:
+        "A civic engagement platform for reporting public issues and tracking response with transparency.",
+      context:
+        "Citizens can report infrastructure problems, sanitation concerns, and safety hazards while staying connected to updates from authorities.",
+      outcome:
+        "Built to demonstrate user authentication, real-time data handling, CRUD operations, and communication between users and administrative systems.",
+      stack: ["Authentication", "Real-Time Data", "CRUD Operations"],
+      visualVariant: "civicVoice",
+      alt: "CivicVoice civic engagement platform hero mockup",
+    };
+  }
+
+  return project;
+});
 
 const abilities = [
   {
@@ -334,5 +365,5 @@ export {
   techStackIcons,
   techStackImgs,
   navLinks,
-  showcaseProjects,
+  portfolioShowcaseProjects as showcaseProjects,
 };
